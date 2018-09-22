@@ -1,21 +1,19 @@
-// http://eslint.org/docs/user-guide/configuring
-
 module.exports = {
   root: true,
-  parser: "babel-eslint",
-  parserOptions: {
-    sourceType: "module"
-  },
   env: {
     browser: true,
     node: true
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: "prettier",
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+  extends: [
+    'plugin:vue/recommended',
+  ],
   // required to lint *.vue files
-  plugins: ["html", "prettier"],
+  plugins: [
+    'vue'
+  ],
   // add your custom rules here
-  rules: {
-    "prettier/prettier": "error"
-  }
-};
+  rules: {}
+}

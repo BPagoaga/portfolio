@@ -1,5 +1,5 @@
 <template>
-    <footer>&copy; <a href="bernardpagoaga.net">Bernard Pagoaga</a> - {{ year }}</footer>
+  <footer>&copy; <a href="bernardpagoaga.net">Bernard Pagoaga</a> 2015 - {{ year }}</footer>
 </template>
 
 <script>

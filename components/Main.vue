@@ -1,5 +1,5 @@
 <template>
-    <main>
-        <nuxt/>
-    </main>
+  <main>
+    <nuxt/>
+  </main>
 </template>

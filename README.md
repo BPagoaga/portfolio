@@ -1,5 +1,3 @@
-# portfolio
-Portfolio v0
+# Portfolio v2
 
-Student at Digital Campus, Merignac, France. Web project manager/Webdeveloper
-Online Resume : bernardpagoaga.net
+En cours de construction

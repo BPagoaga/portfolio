@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio and blog built with Nuxt.js",
+  "description": "Bernard Pagoaga, Javascript &amp; PHP Web Developer in Lille : Symfony, Angular, Vue, ApiPlatform",
   "author": "BPagoaga",
   "private": true,
   "scripts": {
@@ -14,10 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
-    "vuetify": "^1.1.0",
-    "@nuxtjs/axios": "^5.0.0"
+    "nuxt-fontawesome": "^0.3.0",
+    "vuetify": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

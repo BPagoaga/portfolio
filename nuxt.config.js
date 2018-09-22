@@ -9,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Bernard Pagoaga, Javascript Front-End Web Developer in Lille',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,7 +17,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity: 'sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin: 'anonymous' },
+      {
+        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Sans'
+      }
     ]
   },
 
@@ -31,7 +35,7 @@ module.exports = {
   */
   css: [
     'vuetify/src/stylus/main.styl',
-    '@/assets/css/main.scss'
+    '@/assets/scss/main.scss'
   ],
 
   /*
@@ -46,7 +50,9 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // https://github.com/vaso2/nuxt-fontawesome
+    'nuxt-fontawesome'
   ],
   /*
   ** Axios module configuration

@@ -1,2 +1,14 @@
-sitemap.xml
-googlee169a66ef95b4599.html
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# IDE
+.idea

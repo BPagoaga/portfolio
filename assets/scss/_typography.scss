@@ -1,0 +1,30 @@
+:root {
+    --ff: 'Fira Sans', sans-serif;
+    --main-color: hsla(5%, 100%, 0%, .8);
+}
+
+html,
+body {
+    font-family: var(--ff);
+    line-height: 2em;
+}
+
+a {
+    color: var(--main-color)
+}
+
+.list-inline {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+
+    a {
+        padding: 0 8px;
+        font-size: 24px;
+    }
+}
+
+h1 {
+    text-align: center;
+}

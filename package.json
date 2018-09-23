@@ -1,33 +1,34 @@
 {
-  "name": "Portfolio",
-  "version": "2.0.0",
-  "description": "Rework of my portfolio",
-  "main": "js/main.js",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Bernard Pagoaga, Javascript &amp; PHP Web Developer in Lille : Symfony, Angular, Vue, ApiPlatform",
+  "author": "BPagoaga",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d --watch",
-    "build": "webpack -p"
-  },
-  "repository": {
-    "type": "git",
-    "url": "Portfoliov2"
-  },
-  "author": "Bernard Pagoaga",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.14.0",
-    "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "node-sass": "^3.9.3",
-    "sass": "^0.5.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
-    "normalize.css": "^4.2.0"
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.3.0",
+    "vuetify": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
   }
 }

@@ -1,39 +1,37 @@
 <template>
   <header>
-    <h1>PHP &amp; Javascript Web Developer in Lille <br>
-      Bernard Pagoaga</h1>
+    <v-toolbar 
+      dense 
+      class="white">
+      <v-toolbar-title v-text="title"/>
 
-    <br>
-    <!-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>-->
-    <nav class="social-media">
-      <ul class="list-inline">
-        <li>
-          <a 
-            href="https://www.facebook.com/people/Bernard-Pagoaga/100009005267393" 
-            target="_blank"><i class="fab fa-facebook-f" /></a>
-        </li>
-        <li>
-          <a 
-            href="https://twitter.com/bpagoaga?lang=fr" 
-            target="_blank"><i class="fab fa-twitter" /></a>
-        </li>
-        <li>
-          <a 
-            href="https://fr.linkedin.com/in/bernard-pagoaga-a7307470" 
-            target="_blank"><i class="fab fa-linkedin" /></a>
-        </li>
-        <li>
-          <a 
-            href="https://github.com/BPagoaga" 
-            target="_blank"><i class="fab fa-github" /></a>
-        </li>
-        <li>
-          <a 
-            href="http://codepen.io/BPagoaga/#" 
-            target="_blank"><i class="fab fa-codepen" /></a>
-        </li>
-      </ul>
-    </nav>
+      <v-spacer/>
+
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn 
+          icon 
+          href="https://www.facebook.com/people/Bernard-Pagoaga/100009005267393" 
+          target="_blank"><i class="fab fa-facebook-f" /></v-btn>
+        <v-btn 
+          icon 
+          href="https://twitter.com/bpagoaga?lang=fr" 
+          target="_blank"><i class="fab fa-twitter" /></v-btn>
+        <v-btn 
+          icon 
+          href="https://fr.linkedin.com/in/bernard-pagoaga-a7307470" 
+          target="_blank"><i class="fab fa-linkedin" /></v-btn>
+        <v-btn 
+          icon 
+          href="https://github.com/BPagoaga" 
+          target="_blank"><i class="fab fa-github" />
+        </v-btn>
+        <v-btn 
+          icon 
+          href="https://codepen.io/BPagoaga" 
+          target="_blank"><i class="fab fa-codepen" />
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
   </header>
 </template>
 
@@ -41,7 +39,8 @@
 export default {
   data() {
     return {
-      show: false
+      show: false,
+      title: `BPagoaga`
     }
   },
   mounted() {},

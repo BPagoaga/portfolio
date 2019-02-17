@@ -1,10 +1,10 @@
 <template>
-  <section class="grid">
+  <v-app>
     <Header />
     <Aside />
     <Main />
     <Footer />
-  </section>
+  </v-app>
 </template>
 
 <script>

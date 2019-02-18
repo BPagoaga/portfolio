@@ -14,6 +14,6 @@ export default {
       //this.show = makeStore.state.show
     }
   },
-  mounted() {},
+  mounted() {}
 }
 </script>

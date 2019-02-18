@@ -1,13 +1,13 @@
-const pkg = require("./package");
+const pkg = require("./package")
 
-const nodeExternals = require("webpack-node-externals");
+const nodeExternals = require("webpack-node-externals")
 
 module.exports = {
   mode: "universal",
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: "Bernard Pagoaga, Javascript & PHP Web Developer in Lille",
     meta: [
@@ -63,23 +63,23 @@ module.exports = {
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: "#FFFFFF" },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: ["vuetify/src/stylus/main.styl", "@/assets/scss/main.scss"],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: ["@/plugins/vuetify"],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
@@ -87,19 +87,19 @@ module.exports = {
     "nuxt-fontawesome"
   ],
   /*
-  ** Axios module configuration
-  */
+   ** Axios module configuration
+   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
@@ -108,15 +108,15 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
           exclude: /(node_modules)/
-        });
+        })
       }
       if (ctx.isServer) {
         config.externals = [
           nodeExternals({
             whitelist: [/^vuetify/]
           })
-        ];
+        ]
       }
     }
   }
-};
+}

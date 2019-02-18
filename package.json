@@ -4,13 +4,16 @@
   "description": "Bernard Pagoaga, Javascript &amp; PHP Web Developer in Lille : Symfony, Angular, Vue, ApiPlatform",
   "author": "BPagoaga",
   "private": true,
+  "eslintIgnore": [
+    "assets/js/main.js"
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -23,10 +26,13 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
+    "eslint-config-prettier": "^3.6.0",
     "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.6",
+    "prettier": "^1.16.0",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"

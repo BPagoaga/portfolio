@@ -1,24 +1,20 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center>
-    <v-flex
-      xs12>
-      <v-card>
-        <v-card-title class="headline">Building website</v-card-title>
-        <v-card-text>
-          <p>Sorry for the inconvenience.</p>
-          <p>I promise I'll be back ASAP.</p>
-        </v-card-text>
-      </v-card>
-    </v-flex>
+  <v-layout column justify-center align-center>
+    <v-card color="#fb8c00" width="400px">
+      <v-card-title class="headline">Building website</v-card-title>
+      <v-card-text>
+        <p>Sorry for the inconvenience.</p>
+        <p>Work In Progress</p>
+      </v-card-text>
+    </v-card>
+    <ProjectsList/>
   </v-layout>
 </template>
 
 <script>
-
+import ProjectsList from "@/components/projects/ProjectsList";
 export default {
-  layout: 'index'
-}
+  layout: "index",
+  components: { ProjectsList }
+};
 </script>

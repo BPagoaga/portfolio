@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const { t, locale, locales, setLocale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
-console.log(locale)
 
 const availableLocales = computed(() => {
   return locales.value.filter(i => i.code !== locale.value)

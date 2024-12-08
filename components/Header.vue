@@ -1,42 +1,55 @@
+<script setup lang="ts">
+const { t, locale, locales, setLocale } = useI18n()
+useHead({
+  htmlAttrs: {
+    lang: locale,
+  },
+})
+const switchLocalePath = useSwitchLocalePath()
+
+const availableLocales = computed(() => {
+  return locales.value.filter(i => i.code !== locale.value)
+})
+
+const ariaLabelLinkedin = computed(() => t("site.navigation.socials.linkedin"))
+const ariaLabelGithub = computed(() => t("site.navigation.socials.github"))
+</script>
+
 <template>
   <header>
-    <h1>PHP &amp; Javascript Web Developer in Lille
+    <h1>{{ t("site.title") }}
       <br>Bernard Pagoaga
     </h1>
+    <a href="#" v-for="locale in availableLocales" :key="locale.code" @click.prevent.stop="setLocale(locale.code)">
+      {{ locale.name }}
+    </a>
 
     <br>
-    <!-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>-->
     <nav class="social-media">
+      <ul>
+        <li>
+          <NuxtLink to="/">{{ t("site.navigation.home") }}</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about">{{ t("site.navigation.about") }}</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/blog">{{ t("site.navigation.blog") }}</NuxtLink>
+        </li>
+      </ul>
       <ul class="list-inline">
         <li>
-          <a href="https://www.facebook.com/people/Bernard-Pagoaga/100009005267393" target="_blank">
-            <i class="fab fa-facebook-f" />
+          <a :aria-label="ariaLabelLinkedin" :title="ariaLabelLinkedin"
+            href="https://fr.linkedin.com/in/bernard-pagoaga-a7307470" target="_blank">
+            <v-icon icon="mdi-linkedin" aria-hidden="true" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/bpagoaga?lang=fr" target="_blank">
-            <i class="fab fa-twitter" />
-          </a>
-        </li>
-        <li>
-          <a href="https://fr.linkedin.com/in/bernard-pagoaga-a7307470" target="_blank">
-            <i class="fab fa-linkedin" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/BPagoaga" target="_blank">
-            <i class="fab fa-github" />
-          </a>
-        </li>
-        <li>
-          <a href="http://codepen.io/BPagoaga/#" target="_blank">
-            <i class="fab fa-codepen" />
+          <a :aria-label="ariaLabelGithub" :title="ariaLabelGithub" href="https://github.com/BPagoaga" target="_blank">
+            <v-icon icon="mdi-github" aria-hidden="true" />
           </a>
         </li>
       </ul>
     </nav>
   </header>
 </template>
-
-<script>
-</script>

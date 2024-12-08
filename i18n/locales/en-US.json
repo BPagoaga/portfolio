@@ -1,4 +1,18 @@
 {
-  "title": "TITLE",
-  "description": "DESCRIPTIONEN"
+  "site": {
+    "title": "Javascript & PHP Web Developer in Lille",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "blog": "Blog",
+      "socials": {
+        "linkedin": "Link to Linkedin",
+        "github": "Link to Github"
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "description": "I am a web developer based in Lille, France. I have a passion for web development and design, and I love to create websites that are both beautiful and functional. I have experience with a variety of technologies, including JavaScript, PHP, and MySQL. I am always looking for new challenges and opportunities to learn and grow as a developer."
+  }
 }

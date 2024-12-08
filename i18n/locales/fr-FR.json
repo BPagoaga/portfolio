@@ -1,4 +1,18 @@
 {
-  "title": "TITRE",
-  "description": "DESCRIPTION"
+  "site": {
+    "title": "Développeur Web Javascript & PHP à Lille",
+    "navigation": {
+      "home": "Accueil",
+      "about": "A propos",
+      "blog": "Blog",
+      "socials": {
+        "linkedin": "Lien vers Linkedin",
+        "github": "Lien vers Github"
+      }
+    }
+  },
+  "about": {
+    "title": "A propos de moi",
+    "description": "Je suis un développeur web basé à Lille, en France. J'ai une passion pour le développement web et le design, et j'aime créer des sites web à la fois beaux et fonctionnels. J'ai de l'expérience avec une variété de technologies, y compris JavaScript, PHP et MySQL. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et grandir en tant que développeur."
+  }
 }

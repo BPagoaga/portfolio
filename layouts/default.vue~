@@ -1,0 +1,8 @@
+<template>
+  <section class="grid">
+    <Header />
+    <Aside />
+    <slot />
+    <Footer />
+  </section>
+</template>

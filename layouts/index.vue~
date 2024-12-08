@@ -1,8 +1,0 @@
-<template>
-  <section class="grid">
-    <Header />
-    <Aside />
-    <Main />
-    <Footer />
-  </section>
-</template>

@@ -73,3 +73,6 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+- pull postgres docker image `sudo docker pull postgres`
+- run docker : `docker run --name drizzle-postgres -e POSTGRES_PASSWORD=**** -d -p 5432:5432 postgres`

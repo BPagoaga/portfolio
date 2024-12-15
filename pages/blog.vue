@@ -5,6 +5,8 @@
   <NuxtLink to="/articles/ergokbd">go to article kbd</NuxtLink>
 </template>
 <script setup lang="ts">
+const { data, status, error, refresh, clear } = await useFetch('/api/articles')
+console.log(data.value)
 definePageMeta
   ({
     layout
